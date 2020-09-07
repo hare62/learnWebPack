@@ -4,9 +4,14 @@ module.exports = {
   // 配置文件的模块
   module:{
     rules:[{
-      test:/\.jpg$/,
+      test:/\.(png|jpe?g|gif)$/,
       use:{
-        loader:'file-loader'
+        loader:'file-loader',
+        //placeholder占位符
+        options:{
+          // name:'[name]_[hash].[ext]',
+          // outputPath:'images/',
+        }
       }
     }]
   },
