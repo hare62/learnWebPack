@@ -1,6 +1,9 @@
 
 import avatar from './picture.jpg';
 import './index.scss';
+import createAvatar from './avatar';
+
+createAvatar();
 var img = new Image();
 img.src = avatar ;
 img.classList.add('avatar');
